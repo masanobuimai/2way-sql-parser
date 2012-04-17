@@ -1,0 +1,2 @@
+SELECT * FROM BOOK
+ORDER BY /*$orderByColumn*/BOOK_ID ASC

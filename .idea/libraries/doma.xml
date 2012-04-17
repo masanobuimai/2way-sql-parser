@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="doma">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/doma/doma-1.22.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/doma/doma-1.22.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

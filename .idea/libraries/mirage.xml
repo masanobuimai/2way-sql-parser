@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="mirage">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/mirage/javassist-3.7.ga.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mirage/mirage-1.1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mirage/ognl-2.7.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/mirage/mirage-1.1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

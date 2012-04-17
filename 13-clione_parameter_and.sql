@@ -1,0 +1,2 @@
+SELECT * FROM PEOPLE
+ORDER BY NAME /* &order */
