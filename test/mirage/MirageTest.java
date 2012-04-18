@@ -3,8 +3,6 @@ package mirage;
 import jp.sf.amateras.mirage.parser.*;
 import org.junit.Test;
 
-import java.util.Arrays;
-
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertThat;
 import static util.Utils.join;
@@ -32,7 +30,8 @@ public class MirageTest {
         node.accept(ctx);
 
         assertThat(join(ctx.getSql()), is("SELECT * FROM BOOK WHERE AUTHOR = ? ORDER BY BOOK_ID ASC"));
-        assertThat(ctx.getBindVariables(), arrayContaining(new Object[]{"AUTHOR"}));
+//        assertThat(ctx.getBindVariables(), arrayContaining(new Object[]{"AUTHOR"}));
+        assertThat((String) ctx.getBindVariables()[0], is("AUTHOR"));
     }
 
 
@@ -64,8 +63,8 @@ public class MirageTest {
         node.accept(ctx);
 
         assertThat(join(ctx.getSql()), is("SELECT * FROM BOOK    WHERE      PRICE <= ?"));
-        assertThat(ctx.getBindVariables(), arrayContaining(new Object[]{10}));
-        System.out.println("variables" + Arrays.toString(ctx.getBindVariables()));
+//        assertThat(ctx.getBindVariables(), arrayContaining(new Object[]{10}));
+        assertThat((Integer) ctx.getBindVariables()[0], is(10));
 
         ctx = new SqlContextImpl();
         ctx.addArg("minPrice", 20, Integer.class);
