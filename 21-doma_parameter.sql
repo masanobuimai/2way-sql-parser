@@ -1,0 +1,3 @@
+SELECT * FROM BOOK
+WHERE AUTHOR = /* author */'Nakamura'
+ORDER BY BOOK_ID ASC
